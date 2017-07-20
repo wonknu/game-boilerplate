@@ -1,0 +1,12 @@
+# Node
+node_modules
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
