@@ -19,7 +19,7 @@ export default class GameScene {
   }
 
   end () {
-      if(this.btnNext != null) this.btnNext.removeEventListener('click', this._handleEnd)
+    if(this.btnNext != null) this.btnNext.removeEventListener('click', this._handleEnd)
     this.onEvent._fire({event: 'sceneEnd', step: this.step})
   }
 
