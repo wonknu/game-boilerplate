@@ -34,6 +34,7 @@
   },
   "scripts": {
     "precommit": "lint-staged",
+    "pretty": "node_modules/.bin/prettier --write --single-quote --no-semi --tab-width 2 \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node tasks/start.js",
     "watch": "webpack --watch & ./node_modules/.bin/serve -p 3000 dist",
@@ -42,7 +43,7 @@
   "lint-staged": {
     "linters":{
       "src/**/*.js": [
-        "node_modules/.bin/prettier --single-quote --no-semi --tab-width 2 --write",
+        "npm run pretty",
         "git add"
       ]
     }
