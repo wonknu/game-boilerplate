@@ -16,6 +16,6 @@ document.querySelector('.custom').addEventListener('click', e => {
   currentGame = new CustomGame()
 })
 
-		document.querySelector('.quit-game').addEventListener('click', e => {
+document.querySelector('.quit-game').addEventListener('click', e => {
 	  	if (currentGame != null) window.onEvent._fire({ event: 'quit' })
 	})
