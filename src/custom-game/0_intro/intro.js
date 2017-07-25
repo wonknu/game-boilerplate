@@ -3,17 +3,20 @@ import GameScene from '../../gameModule/GameScene'
 const STEP_VALUE = 'intro'
 
 class Scene extends GameScene {
-
-  get STEP () { return STEP_VALUE }
-
-  constructor () {
-  	super(STEP_VALUE)
+  get STEP() {
+    return STEP_VALUE
   }
 
-  get html () {
+  constructor() {
+    super(STEP_VALUE)
+  }
+
+  get html() {
     return `<div class="intro">
     					<br>
-              ${polyglot.t('hello')}, ${polyglot.t('This is step', {step: this.step})}
+              ${polyglot.t('hello')}, ${polyglot.t('This is step', {
+      step: this.step
+    })}
               <br>
               <div>
               	<br>

@@ -3,14 +3,15 @@ import GameScene from '../../gameModule/GameScene'
 const STEP_VALUE = 'outro'
 
 class Scene extends GameScene {
-
-  get STEP () { return STEP_VALUE }
-
-  constructor () {
-  	super(STEP_VALUE)
+  get STEP() {
+    return STEP_VALUE
   }
 
-  get html () {
+  constructor() {
+    super(STEP_VALUE)
+  }
+
+  get html() {
     return `<div class="outro">
               <div>
                 <br>
@@ -19,7 +20,6 @@ class Scene extends GameScene {
               </div>
             </div>`
   }
-
 }
 
 export default new Scene()

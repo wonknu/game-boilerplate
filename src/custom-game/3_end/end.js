@@ -3,23 +3,24 @@ import GameScene from '../../gameModule/GameScene'
 const STEP_VALUE = 'end'
 
 class Scene extends GameScene {
-
-  get STEP () { return STEP_VALUE }
-
-  constructor () {
-  	super(STEP_VALUE)
-
-  	this._result = false
+  get STEP() {
+    return STEP_VALUE
   }
 
-  set result (result) {
-  	this._result = result
+  constructor() {
+    super(STEP_VALUE)
+
+    this._result = false
   }
 
-  get html () {
+  set result(result) {
+    this._result = result
+  }
+
+  get html() {
     return `<div class="end">
     					<br>
-              ${polyglot.t('This is step', {step: this.step})}
+              ${polyglot.t('This is step', { step: this.step })}
               <br>
               <div>
               	<br>
@@ -32,7 +33,6 @@ class Scene extends GameScene {
               </div>
             </div>`
   }
-
 }
 
 export default new Scene()
