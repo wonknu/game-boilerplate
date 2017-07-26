@@ -1,9 +1,14 @@
 # Node
 node_modules
+npm-debug\.log
 
 # Sublime
 *.sublime-project
 *.sublime-workspace
+
+# Dist
+dist/assets/bundle.css
+dist/assets/bundle.js
 
 # Mac
 .DS_Store
