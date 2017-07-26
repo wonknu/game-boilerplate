@@ -13,6 +13,7 @@ export default class GameScene {
 
   start() {
     this.btnNext = document.querySelector('.btn-next')
+    if (!this.btnNext) return
     this._handleEnd = this.end.bind(this)
     this.btnNext.addEventListener('click', this._handleEnd)
   }

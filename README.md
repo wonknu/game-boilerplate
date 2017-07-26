@@ -1,14 +1,14 @@
 Game boilerplate
 ================
 
-### Instal
+### Install
 
 ```
 git clone git@github.com:wonknu/game-boilerplate.git
 ```
 
 ```
-npm install
+npm i
 ```
 
 ### Running
