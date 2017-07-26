@@ -45,3 +45,24 @@ all scene object extends /src/gameModule/GameScene.js which manage the life of a
 ### Styling
 
 styles folder is for common style, if you need to style a game with use the styles files from the scenes folder
+
+This project include [simplegrid](http://simplegrid.io/)
+
+### Localisation
+
+This project have [node-polyglot](https://github.com/airbnb/polyglot.js) from airbnb installed
+a variable polyglot is avaliable globally, just use it this way :
+
+```
+`some static text ${polyglot.t('some localised text')}`
+```
+
+inside src/locales folder there is the json files for translated key/value
+example (gb.json) :
+
+```
+{
+	"some localised text": "some localised text in english"
+}
+```
+

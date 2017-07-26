@@ -1,3 +1,15 @@
-.game-wrapper{
-  
-}
+// Utilities
+@import 'styles/utils/reset';
+@import 'styles/utils/simple-grid'; // http://simplegrid.io/
+
+// Configuration files
+@import 'styles/config/media-queries';
+@import 'styles/config/colors';
+@import 'styles/config/sizes';
+
+// Main layout
+@import 'styles/layout/pages';
+
+// Common styles
+// @import 'styles/common/...';
+
