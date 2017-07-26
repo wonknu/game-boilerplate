@@ -1,0 +1,10 @@
+@import '../../../node_modules/swiper/dist/css/swiper.min.css';
+
+.swiper-container{
+	padding-bottom: 30px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom, .swiper-pagination-fraction{
+	bottom: 0;
+}

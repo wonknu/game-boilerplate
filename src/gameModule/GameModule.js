@@ -51,7 +51,7 @@ export default class GameModule {
   }
 
   onSuddentQuit() {
-    var souldQuit = confirm('Quit ?')
+    let souldQuit = confirm('Quit ?')
     if (souldQuit) this.destroy()
   }
 

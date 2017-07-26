@@ -6,6 +6,8 @@ import { Play } from './2_play'
 import { End } from './3_end'
 import { Outro } from './4_outro'
 
+import { Popin } from '../gameModule/popin'
+
 export default class Game extends GameModule {
   static get NAME() {
     return 'custom game'
@@ -20,6 +22,12 @@ export default class Game extends GameModule {
     this.hasWon = false
 
     this.scene = Intro
+  }
+
+  onSuddentQuit() {
+    Popin.confirm().then(res => {
+      if (res.ok) this.destroy()
+    })
   }
 
   sceneEnd(evt) {

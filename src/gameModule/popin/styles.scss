@@ -1,0 +1,23 @@
+.popin-wrapper{
+	background: rgba(0, 0, 0, 0.2);
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition: opacity 200ms ease;
+	&.on{
+		visibility: visible;
+		opacity: 1;
+	}
+	.pop-body{
+  	padding: 20% 20%;
+    text-align: center;
+    background: #FFF;
+	}
+	.pop-text{
+    line-height: 50px;
+	}
+}
