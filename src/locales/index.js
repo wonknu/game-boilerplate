@@ -5,4 +5,5 @@ import gb from './gb.json'
 
 var langs = { fr, gb }
 
-window.polyglot = new Polyglot({ phrases: langs[navigator.language] })
+window.userLang = navigator.language
+window.polyglot = new Polyglot({ phrases: langs[userLang] })

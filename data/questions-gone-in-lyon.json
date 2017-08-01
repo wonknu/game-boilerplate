@@ -1,0 +1,948 @@
+[
+	{
+		"id": 0,
+		"question": {
+			"fr": "Question 0 en FR ?",
+			"gb": "Question 0 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 0 en FR",
+				"right": "choix 2 question 0 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 0 in GB",
+				"right": "choice 2 question 0 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 0 en FR",
+			"gb": "information about question nubmer 0 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 1,
+		"question": {
+			"fr": "Question 1 en FR ?",
+			"gb": "Question 1 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 1 en FR",
+				"right": "choix 2 question 1 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 1 in GB",
+				"right": "choice 2 question 1 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 1 en FR",
+			"gb": "information about question nubmer 1 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 2,
+		"question": {
+			"fr": "Question 2 en FR ?",
+			"gb": "Question 2 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 2 en FR",
+				"right": "choix 2 question 2 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 2 in GB",
+				"right": "choice 2 question 2 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 2 en FR",
+			"gb": "information about question nubmer 2 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 3,
+		"question": {
+			"fr": "Question 3 en FR ?",
+			"gb": "Question 3 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 3 en FR",
+				"right": "choix 2 question 3 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 3 in GB",
+				"right": "choice 2 question 3 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 3 en FR",
+			"gb": "information about question nubmer 3 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 4,
+		"question": {
+			"fr": "Question 4 en FR ?",
+			"gb": "Question 4 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 4 en FR",
+				"right": "choix 2 question 4 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 4 in GB",
+				"right": "choice 2 question 4 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 4 en FR",
+			"gb": "information about question nubmer 4 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 5,
+		"question": {
+			"fr": "Question 5 en FR ?",
+			"gb": "Question 5 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 5 en FR",
+				"right": "choix 2 question 5 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 5 in GB",
+				"right": "choice 2 question 5 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 5 en FR",
+			"gb": "information about question nubmer 5 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 6,
+		"question": {
+			"fr": "Question 6 en FR ?",
+			"gb": "Question 6 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 6 en FR",
+				"right": "choix 2 question 6 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 6 in GB",
+				"right": "choice 2 question 6 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 6 en FR",
+			"gb": "information about question nubmer 6 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 7,
+		"question": {
+			"fr": "Question 7 en FR ?",
+			"gb": "Question 7 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 7 en FR",
+				"right": "choix 2 question 7 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 7 in GB",
+				"right": "choice 2 question 7 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 7 en FR",
+			"gb": "information about question nubmer 7 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 8,
+		"question": {
+			"fr": "Question 8 en FR ?",
+			"gb": "Question 8 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 8 en FR",
+				"right": "choix 2 question 8 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 8 in GB",
+				"right": "choice 2 question 8 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 8 en FR",
+			"gb": "information about question nubmer 8 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 9,
+		"question": {
+			"fr": "Question 9 en FR ?",
+			"gb": "Question 9 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 9 en FR",
+				"right": "choix 2 question 9 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 9 in GB",
+				"right": "choice 2 question 9 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 9 en FR",
+			"gb": "information about question nubmer 9 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 10,
+		"question": {
+			"fr": "Question 10 en FR ?",
+			"gb": "Question 10 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 10 en FR",
+				"right": "choix 2 question 10 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 10 in GB",
+				"right": "choice 2 question 10 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 10 en FR",
+			"gb": "information about question nubmer 10 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 11,
+		"question": {
+			"fr": "Question 11 en FR ?",
+			"gb": "Question 11 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 11 en FR",
+				"right": "choix 2 question 11 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 11 in GB",
+				"right": "choice 2 question 11 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 11 en FR",
+			"gb": "information about question nubmer 11 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 12,
+		"question": {
+			"fr": "Question 12 en FR ?",
+			"gb": "Question 12 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 12 en FR",
+				"right": "choix 2 question 12 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 12 in GB",
+				"right": "choice 2 question 12 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 12 en FR",
+			"gb": "information about question nubmer 12 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 13,
+		"question": {
+			"fr": "Question 13 en FR ?",
+			"gb": "Question 13 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 13 en FR",
+				"right": "choix 2 question 13 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 13 in GB",
+				"right": "choice 2 question 13 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 13 en FR",
+			"gb": "information about question nubmer 13 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 14,
+		"question": {
+			"fr": "Question 14 en FR ?",
+			"gb": "Question 14 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 14 en FR",
+				"right": "choix 2 question 14 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 14 in GB",
+				"right": "choice 2 question 14 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 14 en FR",
+			"gb": "information about question nubmer 14 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 15,
+		"question": {
+			"fr": "Question 15 en FR ?",
+			"gb": "Question 15 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 15 en FR",
+				"right": "choix 2 question 15 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 15 in GB",
+				"right": "choice 2 question 15 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 15 en FR",
+			"gb": "information about question nubmer 15 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 16,
+		"question": {
+			"fr": "Question 16 en FR ?",
+			"gb": "Question 16 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 16 en FR",
+				"right": "choix 2 question 16 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 16 in GB",
+				"right": "choice 2 question 16 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 16 en FR",
+			"gb": "information about question nubmer 16 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 17,
+		"question": {
+			"fr": "Question 17 en FR ?",
+			"gb": "Question 17 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 17 en FR",
+				"right": "choix 2 question 17 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 17 in GB",
+				"right": "choice 2 question 17 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 17 en FR",
+			"gb": "information about question nubmer 17 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 18,
+		"question": {
+			"fr": "Question 18 en FR ?",
+			"gb": "Question 18 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 18 en FR",
+				"right": "choix 2 question 18 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 18 in GB",
+				"right": "choice 2 question 18 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 18 en FR",
+			"gb": "information about question nubmer 18 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 19,
+		"question": {
+			"fr": "Question 19 en FR ?",
+			"gb": "Question 19 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 19 en FR",
+				"right": "choix 2 question 19 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 19 in GB",
+				"right": "choice 2 question 19 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 19 en FR",
+			"gb": "information about question nubmer 19 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 20,
+		"question": {
+			"fr": "Question 20 en FR ?",
+			"gb": "Question 20 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 20 en FR",
+				"right": "choix 2 question 20 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 20 in GB",
+				"right": "choice 2 question 20 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 20 en FR",
+			"gb": "information about question nubmer 20 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 21,
+		"question": {
+			"fr": "Question 21 en FR ?",
+			"gb": "Question 21 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 21 en FR",
+				"right": "choix 2 question 21 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 21 in GB",
+				"right": "choice 2 question 21 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 21 en FR",
+			"gb": "information about question nubmer 21 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 22,
+		"question": {
+			"fr": "Question 22 en FR ?",
+			"gb": "Question 22 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 22 en FR",
+				"right": "choix 2 question 22 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 22 in GB",
+				"right": "choice 2 question 22 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 22 en FR",
+			"gb": "information about question nubmer 22 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 23,
+		"question": {
+			"fr": "Question 23 en FR ?",
+			"gb": "Question 23 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 23 en FR",
+				"right": "choix 2 question 23 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 23 in GB",
+				"right": "choice 2 question 23 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 23 en FR",
+			"gb": "information about question nubmer 23 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 24,
+		"question": {
+			"fr": "Question 24 en FR ?",
+			"gb": "Question 24 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 24 en FR",
+				"right": "choix 2 question 24 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 24 in GB",
+				"right": "choice 2 question 24 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 24 en FR",
+			"gb": "information about question nubmer 24 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 25,
+		"question": {
+			"fr": "Question 25 en FR ?",
+			"gb": "Question 25 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 25 en FR",
+				"right": "choix 2 question 25 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 25 in GB",
+				"right": "choice 2 question 25 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 25 en FR",
+			"gb": "information about question nubmer 25 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 26,
+		"question": {
+			"fr": "Question 26 en FR ?",
+			"gb": "Question 26 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 26 en FR",
+				"right": "choix 2 question 26 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 26 in GB",
+				"right": "choice 2 question 26 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 26 en FR",
+			"gb": "information about question nubmer 26 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 27,
+		"question": {
+			"fr": "Question 27 en FR ?",
+			"gb": "Question 27 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 27 en FR",
+				"right": "choix 2 question 27 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 27 in GB",
+				"right": "choice 2 question 27 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 27 en FR",
+			"gb": "information about question nubmer 27 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 28,
+		"question": {
+			"fr": "Question 28 en FR ?",
+			"gb": "Question 28 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 28 en FR",
+				"right": "choix 2 question 28 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 28 in GB",
+				"right": "choice 2 question 28 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 28 en FR",
+			"gb": "information about question nubmer 28 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 29,
+		"question": {
+			"fr": "Question 29 en FR ?",
+			"gb": "Question 29 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 29 en FR",
+				"right": "choix 2 question 29 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 29 in GB",
+				"right": "choice 2 question 29 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 29 en FR",
+			"gb": "information about question nubmer 29 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 30,
+		"question": {
+			"fr": "Question 30 en FR ?",
+			"gb": "Question 30 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 30 en FR",
+				"right": "choix 2 question 30 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 30 in GB",
+				"right": "choice 2 question 30 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 30 en FR",
+			"gb": "information about question nubmer 30 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 31,
+		"question": {
+			"fr": "Question 31 en FR ?",
+			"gb": "Question 31 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 31 en FR",
+				"right": "choix 2 question 31 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 31 in GB",
+				"right": "choice 2 question 31 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 31 en FR",
+			"gb": "information about question nubmer 31 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 32,
+		"question": {
+			"fr": "Question 32 en FR ?",
+			"gb": "Question 32 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 32 en FR",
+				"right": "choix 2 question 32 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 32 in GB",
+				"right": "choice 2 question 32 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 32 en FR",
+			"gb": "information about question nubmer 32 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 33,
+		"question": {
+			"fr": "Question 33 en FR ?",
+			"gb": "Question 33 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 33 en FR",
+				"right": "choix 2 question 33 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 33 in GB",
+				"right": "choice 2 question 33 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 33 en FR",
+			"gb": "information about question nubmer 33 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 34,
+		"question": {
+			"fr": "Question 34 en FR ?",
+			"gb": "Question 34 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 34 en FR",
+				"right": "choix 2 question 34 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 34 in GB",
+				"right": "choice 2 question 34 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 34 en FR",
+			"gb": "information about question nubmer 34 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 35,
+		"question": {
+			"fr": "Question 35 en FR ?",
+			"gb": "Question 35 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 35 en FR",
+				"right": "choix 2 question 35 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 35 in GB",
+				"right": "choice 2 question 35 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 35 en FR",
+			"gb": "information about question nubmer 35 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 36,
+		"question": {
+			"fr": "Question 36 en FR ?",
+			"gb": "Question 36 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 36 en FR",
+				"right": "choix 2 question 36 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 36 in GB",
+				"right": "choice 2 question 36 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 36 en FR",
+			"gb": "information about question nubmer 36 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 37,
+		"question": {
+			"fr": "Question 37 en FR ?",
+			"gb": "Question 37 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 37 en FR",
+				"right": "choix 2 question 37 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 37 in GB",
+				"right": "choice 2 question 37 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 37 en FR",
+			"gb": "information about question nubmer 37 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 38,
+		"question": {
+			"fr": "Question 38 en FR ?",
+			"gb": "Question 38 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 38 en FR",
+				"right": "choix 2 question 38 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 38 in GB",
+				"right": "choice 2 question 38 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 38 en FR",
+			"gb": "information about question nubmer 38 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 39,
+		"question": {
+			"fr": "Question 39 en FR ?",
+			"gb": "Question 39 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 39 en FR",
+				"right": "choix 2 question 39 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 39 in GB",
+				"right": "choice 2 question 39 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 39 en FR",
+			"gb": "information about question nubmer 39 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 40,
+		"question": {
+			"fr": "Question 40 en FR ?",
+			"gb": "Question 40 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 40 en FR",
+				"right": "choix 2 question 40 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 40 in GB",
+				"right": "choice 2 question 40 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 40 en FR",
+			"gb": "information about question nubmer 40 en GB"
+		},
+		"answer": 1
+	},
+	{
+		"id": 41,
+		"question": {
+			"fr": "Question 41 en FR ?",
+			"gb": "Question 41 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 41 en FR",
+				"right": "choix 2 question 41 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 41 in GB",
+				"right": "choice 2 question 41 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 41 en FR",
+			"gb": "information about question nubmer 41 en GB"
+		},
+		"answer": 0
+	},
+	{
+		"id": 42,
+		"question": {
+			"fr": "Question 42 en FR ?",
+			"gb": "Question 42 en GB ?"
+		},
+		"choice": {
+			"fr": {
+				"left": "choix 1 question 42 en FR",
+				"right": "choix 2 question 42 en FR"
+			},
+			"gb": {
+				"left": "choice 1 question 42 in GB",
+				"right": "choice 2 question 42 in GB"
+			}
+		},
+		"info": {
+			"fr": "information about question nubmer 42 en FR",
+			"gb": "information about question nubmer 42 en GB"
+		},
+		"answer": 1
+	}
+]

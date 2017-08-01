@@ -1,7 +1,9 @@
 import GameScene from '../../gameModule/GameScene'
-import { Stack, Direction } from 'swing' // https://github.com/gajus/swing
+import QUESTIONS from '../../../data/questions-gone-in-lyon.json'
+import { Stack, Direction } from 'swing'
 
 const STEP_VALUE = 'play'
+const NUMBER_OF_CARDS = 10
 
 class Scene extends GameScene {
   get STEP() {
@@ -10,70 +12,149 @@ class Scene extends GameScene {
 
   constructor() {
     super(STEP_VALUE)
+    this.currentQuestions = []
+    this.getQuestions()
+  }
+
+  getQuestions() {
+    let questions = [].concat(QUESTIONS)
+    while (this.currentQuestions.length < NUMBER_OF_CARDS) {
+      this.currentQuestions.push(
+        questions.splice(Math.floor(Math.random() * questions.length), 1)[0]
+      )
+    }
   }
 
   start() {
-    this.btnWin = document.querySelector('.btn-next-win')
-    this.btnLose = document.querySelector('.btn-next-lose')
-    this._handleEnd = this.end.bind(this)
-    this.btnWin.addEventListener('click', this._handleEnd)
-    this.btnLose.addEventListener('click', this._handleEnd)
+    this.circleLeft = document.querySelector('.circle-left')
+    this.circleRight = document.querySelector('.circle-right')
+    this.cards = []
+    let cards = [].slice.call(document.querySelectorAll('#viewport ul li'))
+    const stack = Stack({
+      allowedDirections: [Direction.LEFT, Direction.RIGHT]
+    })
+    Array.prototype.forEach.call(cards, card => {
+      this.cards.push(stack.createCard(card))
+    }) // Add card element to the Stack.
 
-    this.cards = [].slice.call(document.querySelectorAll('#viewport ul li'))
-    const stack = Stack()
-    this.cards.forEach(targetElement => {
-      stack.createCard(targetElement) // Add card element to the Stack.
+    stack.on('throwout', e => {
+      this.resetCircle()
+      let selectedCircle =
+        e.throwDirection == Direction.LEFT ? this.circleLeft : this.circleRight
+      let answer = parseInt(e.target.getAttribute('data-question'))
+      if (
+        (e.throwDirection == Direction.LEFT && answer === 0) ||
+        (e.throwDirection == Direction.RIGHT && answer === 1)
+      ) {
+        selectedCircle.classList.add('ok')
+      } else {
+        selectedCircle.classList.add('ko')
+      }
+      setTimeout(() => this.resetCircle(), 500)
     })
 
-    stack.on('throwout', event => {
-      // Add event listener for when a card is thrown out of the stack.
-      // e.target Reference to the element that has been thrown out of the stack.
-      // e.throwDirection Direction in which the element has been thrown (Direction.LEFT, Direction.RIGHT).
-      console.log('Card has been thrown out of the stack.')
-      console.log(
-        'Throw direction: ' +
-          (event.throwDirection == Direction.LEFT ? 'left' : 'right')
+    stack.on('throwin', () => this.resetCircle())
+    stack.on('dragstart', e => e.target.classList.add('moving'))
+    stack.on('dragend', e => e.target.classList.remove('moving'))
+    stack.on('dragmove', e => {
+      this.resetCircle()
+      if (e.throwDirection === Direction.LEFT)
+        this.circleLeft.classList.add('on')
+      else if (e.throwDirection === Direction.RIGHT)
+        this.circleRight.classList.add('on')
+    })
+    stack.on('throwoutend', e => {
+      e.target.classList.add('throwed')
+      e.target.setAttribute(
+        'data-answer',
+        e.direction === Direction.LEFT ? 0 : 1
       )
-    })
-
-    stack.on('throwin', () => {
-      // Add event listener for when a card is thrown in the stack, including the spring back into place effect.
-      console.log('Card has snapped back to the stack.')
+      if (parseInt(e.target.getAttribute('data-index')) === 0)
+        this.calculateScore()
+      else
+        this.setCircleText(
+          this.currentQuestions[
+            parseInt(e.target.getAttribute('data-index')) - 1
+          ].id
+        )
     })
   }
 
-  end(e) {
-    this.cards.destroy()
+  resetCircle() {
+    let classNames = ['on', 'ok', 'ko']
+    for (var i = 0; i < classNames.length; i++) {
+      this.circleLeft.classList.remove(classNames[i])
+      this.circleRight.classList.remove(classNames[i])
+    }
+  }
 
-    if (this.btnWin != null)
-      this.btnWin.removeEventListener('click', this._handleEnd)
-    if (this.btnLose != null)
-      this.btnLose.removeEventListener('click', this._handleEnd)
+  setCircleText(id) {
+    console.log(id)
+    this.circleLeft.textContent = QUESTIONS[id].choice[userLang].left
+    this.circleRight.textContent = QUESTIONS[id].choice[userLang].right
+  }
+
+  calculateScore(win) {
+    let userGame = { anwsers: [], points: 0 }
+    let questionNodes = document.querySelectorAll('li.throwed')
+    Array.prototype.forEach.call(questionNodes, questionNode => {
+      let goodAnswer =
+        questionNode.getAttribute('data-answer') ===
+        questionNode.getAttribute('data-question')
+      let id = questionNode.getAttribute('data-id')
+      userGame.anwsers.push({
+        goodAnswer: goodAnswer,
+        id: id,
+        index: questionNode.getAttribute('data-index'),
+        question: QUESTIONS[id].question[userLang],
+        info: QUESTIONS[id].info[userLang]
+      })
+      if (goodAnswer) userGame.points++
+    })
+    this.end(userGame)
+  }
+
+  end(userGame) {
+    // true = win, false = lose
+    Array.prototype.forEach.call(this.cards, card => card.destroy())
     this.onEvent._fire({
       event: 'sceneEnd',
       step: this.step,
-      win: parseInt(e.target.getAttribute('data-win')) === 0
+      userGame: userGame
     })
+    this.currentQuestions = []
+    this.userGame = { anwsers: [], points: 0 }
   }
 
   get html() {
+    let questionList = ''
+    for (var i = 0; i < this.currentQuestions.length; i++) {
+      questionList += `<li data-question="${this.currentQuestions[i].answer}" 
+                        data-id="${this.currentQuestions[i].id}" 
+                        data-left="${this.currentQuestions[i].choice[userLang]
+                          .left}"
+                        data-right="${this.currentQuestions[i].choice[userLang]
+                          .right}"
+                        data-index="${i}">
+                        <div>${this.currentQuestions[i].question[
+                          userLang
+                        ]}</div>
+                      </li>`
+    }
+
     return `<div class="play">
     					<div id="viewport">
+                <div class="circle circle-left">${this.currentQuestions[
+                  NUMBER_OF_CARDS - 1
+                ].choice[userLang].left}</div>
                 <ul class="stack">
-                  <li></li>
-                  <li></li>
-                  <li></li>
+                  ${questionList}
                 </ul>
+                <div class="circle circle-right">${this.currentQuestions[
+                  NUMBER_OF_CARDS - 1
+                ].choice[userLang].right}</div>
               </div>
               <br>
-              <div>
-                <button class="btn-next-win" data-win="0">
-                	${polyglot.t('Win !')}
-                </button>
-                <button class="btn-next-lose" data-win="1">
-                	${polyglot.t('Lose !')}
-                </button>
-              </div>
             </div>`
   }
 }

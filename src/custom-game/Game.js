@@ -39,8 +39,7 @@ export default class Game extends GameModule {
         this.scene = Play
         break
       case Play.STEP:
-        this.hasWon = evt.win
-        End.result = evt.win
+        End.result = evt.userGame
         this.scene = End
         break
       case End.STEP:

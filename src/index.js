@@ -1,8 +1,8 @@
+import Locales from './locales'
+
 import styles from './index.scss'
 import GameBoilerplate from './boilerplate/Game'
 import CustomGame from './custom-game/Game'
-
-import Locales from './locales'
 
 let currentGame = null
 

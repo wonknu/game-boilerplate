@@ -10,7 +10,7 @@ class Scene extends GameScene {
   constructor() {
     super(STEP_VALUE)
 
-    this._result = false
+    this._result = null
   }
 
   set result(result) {
@@ -18,13 +18,28 @@ class Scene extends GameScene {
   }
 
   get html() {
+    let questionList = ''
+    for (var i = 0; i < this._result.anwsers.length; i++) {
+      questionList += `<li>
+                          <div>${this._result.anwsers[i].goodAnswer
+                            ? '✅'
+                            : '❌'}</div>
+                          <div>Question : ${this._result.anwsers[i]
+                            .question}</div>
+                          <div>Information : ${this._result.anwsers[i]
+                            .info}</div>
+                          <hr/>
+                      </li>`
+    }
     return `<div class="end">
     					<br>
               ${polyglot.t('This is step', { step: this.step })}
               <br>
               <div>
               	<br>
-              	${polyglot.t(this._result ? 'You Win !' : 'You Lose !')}
+              	<ul>
+                  ${questionList}
+                </ul>
               	<br>
               	<br>
                 <button class="btn-next">
